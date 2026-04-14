@@ -1,7 +1,7 @@
 import { createReducer, on } from '@ngrx/store';
 import { IToDo, loadTodos, loadTodosSuccess, loadTodosError, toggleTodoComplete } from './todo.actions';
 
-interface ITodoState {
+export interface ITodoState {
     todos: IToDo[],
     loading: boolean,
     error: string | null,    
